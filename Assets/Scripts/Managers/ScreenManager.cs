@@ -6,11 +6,14 @@ public class ScreenManager : MonoBehaviour, Managers
 {
     [SerializeField] private AScreen[] screenReference;
 
-    private Dictionary<EScreen, AScreen> Screens = new();
+    public Dictionary<EScreen, AScreen> Screens = new();
 
     public void LoadScreen(EScreen screen)
     {
-        Debug.Log(Screens[screen].gameObject.name);
+        for(int i = 0; i < screenReference.Length; i++)
+            screenReference[i].gameObject.SetActive(false);
+        
+        Screens[screen].gameObject.SetActive(true);
     }
 
     public void Initialize()

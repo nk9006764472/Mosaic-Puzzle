@@ -4,5 +4,4 @@ using UnityEngine;
 
 public class StoreScreen : AScreen
 {
-    public override EScreen ScreenType {get => EScreen.STORE; }
 }

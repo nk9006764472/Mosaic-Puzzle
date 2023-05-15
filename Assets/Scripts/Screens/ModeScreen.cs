@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ModeScreen : AScreen
 {
-    public override EScreen ScreenType {get => EScreen.MODES; }
-
     [SerializeField] private Button _mode1;
     [SerializeField] private Button _mode2;
     [SerializeField] private Button _mode3;
@@ -37,7 +35,7 @@ public class ModeScreen : AScreen
 
     private void LoadGameScreen()
     {
-        GameManager.screen.LoadScreen(EScreen.GAME);
+        GameManager.screen.LoadScreen(EScreen.LEVELS);
     }
 
     private void LoadExitScreen()
