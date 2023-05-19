@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 34175226}
   - component: {fileID: 34175225}
   m_Layer: 5
-  m_Name: Triangle 4
+  m_Name: Triangle 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -278,7 +278,7 @@ RectTransform:
   m_Children:
   - {fileID: 1655747396}
   m_Father: {fileID: 883747863}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -349,8 +349,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4f5f615fe3dc9dd4dbbe6c5f9f326329, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -578,17 +578,28 @@ MonoBehaviour:
   - {r: 0.9215687, g: 0.10588236, b: 0.6431373, a: 1}
   - {r: 0.19607845, g: 0.19607845, b: 0.19607845, a: 1}
   - {r: 0.854902, g: 0.854902, b: 0.854902, a: 1}
-  _sprites:
+  _outlineShapes:
+  - {fileID: 21300000, guid: 51a034a5b4979034cb8ecc355b5192bd, type: 3}
+  - {fileID: 21300000, guid: cd5f3def2879c7f459dfbc3c2ebdf604, type: 3}
+  - {fileID: 21300000, guid: 65787b70f3e758a4b97e4dfccf382d14, type: 3}
+  - {fileID: 21300000, guid: 68fa6492eabed60489969736affccf81, type: 3}
+  - {fileID: 21300000, guid: 9c2c759d64d90144ea5fce8c0b747e56, type: 3}
+  - {fileID: 21300000, guid: 7e3330f15a385de439e2362f9a8d459a, type: 3}
+  - {fileID: 21300000, guid: 98b1ef50b74c90f4ca9ca47dff7656bd, type: 3}
+  - {fileID: 21300000, guid: c1aaf7758a0000440bb136ea1969eac6, type: 3}
+  - {fileID: 21300000, guid: 474367d31a2d71d47bc1623ae0422092, type: 3}
+  - {fileID: 21300000, guid: 972a50cc98a79be49b4ace2afe73cc03, type: 3}
+  _filledShapes:
   - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
-  - {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
+  - {fileID: 21300000, guid: 57a3a2346ee054945b2e42b8ec2c726d, type: 3}
+  - {fileID: 21300000, guid: 0ecd5b1ff1d190c48967fc3cbf4aeda0, type: 3}
+  - {fileID: 21300000, guid: 2e2269fdb1e43114db973cba9df030fb, type: 3}
+  - {fileID: 21300000, guid: d1a04c2668665f3439744f2a8b1e6ea7, type: 3}
+  - {fileID: 21300000, guid: 4f5f615fe3dc9dd4dbbe6c5f9f326329, type: 3}
+  - {fileID: 21300000, guid: e4139cd39954a894abc46cb387f7958e, type: 3}
+  - {fileID: 21300000, guid: 5776a170faf37c840b02f1a10a77cdd5, type: 3}
+  - {fileID: 21300000, guid: 8c40eb640f5315f46973428b88705675, type: 3}
+  - {fileID: 21300000, guid: 403c26a9420360f42aab41c53cc4b8d8, type: 3}
   _levels:
   - {fileID: 11400000, guid: 876cfc4c2f5394740a205b512ef5defb, type: 2}
 --- !u!114 &182830288
@@ -1286,8 +1297,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 57a3a2346ee054945b2e42b8ec2c726d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3296,7 +3307,7 @@ GameObject:
   - component: {fileID: 531053953}
   - component: {fileID: 531053952}
   m_Layer: 5
-  m_Name: Circle 3
+  m_Name: Circle 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3316,7 +3327,7 @@ RectTransform:
   m_Children:
   - {fileID: 1537067077}
   m_Father: {fileID: 883747863}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3387,8 +3398,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 8c40eb640f5315f46973428b88705675, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3509,8 +3520,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 5776a170faf37c840b02f1a10a77cdd5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4054,7 +4065,7 @@ GameObject:
   - component: {fileID: 618916104}
   - component: {fileID: 618916103}
   m_Layer: 5
-  m_Name: Triangle 3
+  m_Name: Triangle 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4074,7 +4085,7 @@ RectTransform:
   m_Children:
   - {fileID: 1465551034}
   m_Father: {fileID: 883747863}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4145,8 +4156,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d1a04c2668665f3439744f2a8b1e6ea7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5026,8 +5037,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 9968b0525e25aaa419bb41b4ab07aeaa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5930,12 +5941,12 @@ RectTransform:
   - {fileID: 284709065}
   - {fileID: 1509905857}
   - {fileID: 1594366563}
-  - {fileID: 618916102}
   - {fileID: 34175224}
+  - {fileID: 618916102}
   - {fileID: 1994262007}
   - {fileID: 531400605}
-  - {fileID: 531053951}
   - {fileID: 1814237211}
+  - {fileID: 531053951}
   m_Father: {fileID: 1957087936}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8785,8 +8796,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0ecd5b1ff1d190c48967fc3cbf4aeda0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9118,8 +9129,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2e2269fdb1e43114db973cba9df030fb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9997,7 +10008,7 @@ GameObject:
   - component: {fileID: 1814237213}
   - component: {fileID: 1814237212}
   m_Layer: 5
-  m_Name: Circle 4
+  m_Name: Circle 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10017,7 +10028,7 @@ RectTransform:
   m_Children:
   - {fileID: 1851849554}
   m_Father: {fileID: 883747863}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -10088,8 +10099,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 403c26a9420360f42aab41c53cc4b8d8, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11142,7 +11153,7 @@ MonoBehaviour:
   _tile: {fileID: 1338885568439607029, guid: d52a5de080783934b9c613a228ae7cec, type: 3}
   _rows: 8
   _coloumns: 8
-  _tileOffset: {x: 10, y: 10}
+  _tileOffset: {x: 6, y: 6}
   _colorPalleteItems:
   - _selectionBorder: {fileID: 968037052}
     _colorButton: {fileID: 957853415}
@@ -11546,8 +11557,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: e4139cd39954a894abc46cb387f7958e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

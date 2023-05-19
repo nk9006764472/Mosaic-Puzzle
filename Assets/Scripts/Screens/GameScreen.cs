@@ -14,9 +14,6 @@ public class GameScreen : AScreen
     [SerializeField] private ColorPalleteItem[] _colorPalleteItems;
     [SerializeField] private ShapePalleteItem[] _shapePalleteItems;
 
-    private int selectedColor = 0;
-    private int selectedShape = 0;
-
     private void Awake() 
     {
         for(int i = 0; i < _colorPalleteItems.Length; i++)    
@@ -34,9 +31,10 @@ public class GameScreen : AScreen
 
     public override void InitializeScreen()
     {
-        selectedColor = 0;
-        selectedShape = 0;
+        GameManager.level.SelectedColor = 0;
+        GameManager.level.SelectedShape = 0;
         ActivateSelectionBorder();
+        ChangeShapeItemsColor();
     }
 
     public void InitializeLevel(int levelNo)
@@ -53,7 +51,7 @@ public class GameScreen : AScreen
             {
                 GameObject spawnnedTile = Instantiate(_tile, _tileParent) as GameObject;
                 RectTransform tileRT = spawnnedTile.GetComponent<RectTransform>();
-                Tile tile = spawnnedTile.GetComponent<Tile>();
+                Tile tile = spawnnedTile.GetComponentInChildren<Tile>();
                 
                 tile.InitializeApplyColor(GameManager.level.CurrentLevel.ColorTable[i, j]);
                 tile.InitializeApplySprite(GameManager.level.CurrentLevel.ShapeTable[i, j]);
@@ -69,21 +67,21 @@ public class GameScreen : AScreen
     {
         for(int i = 0; i < _colorPalleteItems.Length; i++)
         {
-            _colorPalleteItems[i]._selectionBorder.enabled = i == selectedColor;
-            _shapePalleteItems[i]._selectionBorder.enabled = i == selectedShape;
+            _colorPalleteItems[i]._selectionBorder.enabled = i == GameManager.level.SelectedColor;
+            _shapePalleteItems[i]._selectionBorder.enabled = i == GameManager.level.SelectedShape;
         }
     }
 
     private void ColorPalleteItemClicked(int index)
     {
-       selectedColor = index;
+       GameManager.level.SelectedColor = index;
        ActivateSelectionBorder();
        ChangeShapeItemsColor();
     }
 
     private void ShapePalleteItemClicked(int index)
     {
-        selectedShape = index;
+        GameManager.level.SelectedShape = index;
         ActivateSelectionBorder();
     }
 
@@ -91,7 +89,7 @@ public class GameScreen : AScreen
     {
         for(int i = 0; i < _shapePalleteItems.Length; i++)
         {
-            _shapePalleteItems[i]._shapeButton.image.color = GameManager.level.PalleteColors[selectedColor];
+            _shapePalleteItems[i]._shapeButton.image.color = GameManager.level.PeiceColors[GameManager.level.SelectedColor];
         }
     }
 
