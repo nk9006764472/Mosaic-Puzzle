@@ -5,11 +5,6 @@ using UnityEngine.UI;
 
 public class Tile : MonoBehaviour
 {
-    public Color[] Colors => _colors;
-    public Sprite[] Sprites => _sprites;
-
-    [SerializeField] Color[] _colors;
-    [SerializeField] Sprite[] _sprites;
     private Image _display;
     private Button _btn;
 
@@ -23,6 +18,17 @@ public class Tile : MonoBehaviour
 
     private void TileClick()
     {
+        
+    }
 
+    public void InitializeApplyColor(TileColor tileColor)
+    {
+        if(tileColor > 0)                                               //-->   because first element is empty
+            _display.color = GameManager.level.PalleteColors[(int)tileColor];   
+    }
+
+    public void InitializeApplySprite(TileShape tileShape)
+    {
+        //_display.sprite = GameManager.level.PalleteShapes[(int)tileShape];
     }
 }

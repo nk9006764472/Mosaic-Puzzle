@@ -23,7 +23,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: ColorTable
       Entry: 7
-      Data: 0|Level+TileColor[,], Assembly-CSharp
+      Data: 0|TileColor[,], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 64
@@ -230,7 +230,7 @@ MonoBehaviour:
       Data: 
     - Name: ShapeTable
       Entry: 7
-      Data: 1|Level+TileShape[,], Assembly-CSharp
+      Data: 1|TileShape[,], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 64

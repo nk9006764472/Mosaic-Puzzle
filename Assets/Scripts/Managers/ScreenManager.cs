@@ -14,6 +14,7 @@ public class ScreenManager : MonoBehaviour, Managers
             screenReference[i].gameObject.SetActive(false);
         
         Screens[screen].gameObject.SetActive(true);
+        Screens[screen].InitializeScreen();
     }
 
     public void Initialize()

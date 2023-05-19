@@ -32,6 +32,10 @@ public class ModeScreen : AScreen
         _sound.onClick.AddListener(() => ToggleSound());
 
     }
+    public override void InitializeScreen()
+    {
+
+    }
 
     private void LoadGameScreen()
     {
@@ -62,4 +66,5 @@ public class ModeScreen : AScreen
     {
 
     }
+
 }

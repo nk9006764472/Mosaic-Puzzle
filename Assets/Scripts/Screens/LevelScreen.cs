@@ -8,6 +8,10 @@ public class LevelScreen : AScreen
     [SerializeField] private Button _close;
     [SerializeField] private List<Button> _levelButtons;
 
+    public override void InitializeScreen()
+    {
+    }
+
     private void Awake() 
     {
         for(int i = 0; i < _levelButtons.Count; i++)
