@@ -8,8 +8,8 @@ public class LevelManager : MonoBehaviour, Managers
     public Level CurrentLevel => _levels[currentLevelNo];
     public GameScreen GameScreen => gameScreen;
 
-    public int SelectedColor { get { return selectedColor;} set { selectedColor = value; }}
-    public int SelectedShape { get { return selectedShape;} set { selectedShape = value; }}
+    public TileColor SelectedColor { get { return selectedColor;} set { selectedColor = value; }}
+    public TileShape SelectedShape { get { return selectedShape;} set { selectedShape = value; }}
 
 
     public Color[] PeiceColors => _colors;
@@ -25,8 +25,8 @@ public class LevelManager : MonoBehaviour, Managers
 
     private int currentLevelNo;
     private GameScreen gameScreen;
-    private int selectedColor = 0;
-    private int selectedShape = 0;
+    private TileColor selectedColor;
+    private TileShape selectedShape;
 
     public void Initialize()
     {
