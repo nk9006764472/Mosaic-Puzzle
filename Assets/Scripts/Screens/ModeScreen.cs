@@ -13,7 +13,6 @@ public class ModeScreen : AScreen
     [SerializeField] private Button _mode6;
     [SerializeField] private Button _exit;
     [SerializeField] private Button _facebook;
-    [SerializeField] private Button _store;
     [SerializeField] private Button _rateUs;
     [SerializeField] private Button _sound;
 
@@ -27,7 +26,6 @@ public class ModeScreen : AScreen
         _mode6.onClick.AddListener(() => LoadGameScreen());
         _exit.onClick.AddListener(() => LoadExitScreen());
         _facebook.onClick.AddListener(() => GoToFaceBook());
-        _store.onClick.AddListener(() => LoadStoreScreen());
         _rateUs.onClick.AddListener(() => RateUs());
         _sound.onClick.AddListener(() => ToggleSound());
 
@@ -40,6 +38,7 @@ public class ModeScreen : AScreen
     private void LoadGameScreen()
     {
         GameManager.screen.LoadScreen(EScreen.LEVELS);
+        GameManager.aud.PlayButtonClick();
     }
 
     private void LoadExitScreen()
@@ -50,11 +49,6 @@ public class ModeScreen : AScreen
     private void GoToFaceBook()
     {
 
-    }
-
-    private void LoadStoreScreen()
-    {
-        GameManager.screen.LoadScreen(EScreen.STORE);
     }
 
     private void RateUs()

@@ -15,6 +15,8 @@ public class GameScreen : AScreen
     [SerializeField] private ColorPalleteItem[] _colorPalleteItems;
     [SerializeField] private ShapePalleteItem[] _shapePalleteItems;
 
+    [SerializeField] private Button _close;
+
     private Vector2 leftTop, tileHalf, startPos, tileSize;
     private float fallingAnimationDuration;
 
@@ -31,6 +33,8 @@ public class GameScreen : AScreen
             int index = i;
             _shapePalleteItems[index]._shapeButton.onClick.AddListener(() => ShapePalleteItemClicked(index));
         }
+
+        _close.onClick.AddListener(() => LevelScreen());
     }
 
 
@@ -40,8 +44,19 @@ public class GameScreen : AScreen
         GameManager.level.SelectedShape = TileShape.S;
         ActivateSelectionBorder();
         ChangeShapeItemsColor();
+        ClearPreviousLevel();
     }
 
+    private void ClearPreviousLevel()
+    {
+        if(_tileParent.childCount > 0)
+        {
+            for(int i = 0; i < _tileParent.childCount; i++)
+            {
+                Destroy(_tileParent.GetChild(i).gameObject);
+            }
+        }
+    }
 
     /// <summary>
     /// Responsible for spawwing and setting its position when level is generated.
@@ -72,6 +87,8 @@ public class GameScreen : AScreen
 
                 tileRT.anchoredPosition = new Vector2(startPos.x + tileHalf.x * 2 * i, startPos.y - tileHalf.y * 2 * j);
                 tileRT.sizeDelta = tileSize - _tileOffset;
+
+                GameManager.level.TileOnBoard.Add(tile);
             }
         }
     }
@@ -95,6 +112,8 @@ public class GameScreen : AScreen
        GameManager.level.SelectedColor = (TileColor)index + 1;
        ActivateSelectionBorder();
        ChangeShapeItemsColor();
+
+       GameManager.aud.PlayChoose();
     }
 
 
@@ -102,6 +121,8 @@ public class GameScreen : AScreen
     {
         GameManager.level.SelectedShape = (TileShape)index + 1;
         ActivateSelectionBorder();
+
+        GameManager.aud.PlayChoose();
     }
 
 
@@ -132,8 +153,16 @@ public class GameScreen : AScreen
         fallingAnimationDuration = Random.Range(1f,1.5f);
         tileRT.DOAnchorPosY(tileRT.anchoredPosition.y - 1000f, fallingAnimationDuration).SetEase(Ease.InBack);
         tileRT.DOAnchorPosX(tileRT.anchoredPosition.x + Random.Range(-500f, 500f), fallingAnimationDuration).SetEase(Ease.InOutQuad);
+
+        GameManager.aud.PlayWrongPlaced();
     }
 
+    private void LevelScreen()
+    {
+        GameManager.screen.LoadScreen(EScreen.LEVELS);
+        GameManager.level.AbandonLevel();
+        GameManager.aud.PlayButtonClick();
+    }
 
     [System.Serializable]
     public class ColorPalleteItem

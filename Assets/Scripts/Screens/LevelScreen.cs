@@ -14,6 +14,8 @@ public class LevelScreen : AScreen
 
     private void Awake() 
     {
+        _close.onClick.AddListener(() => ModeScreen());
+
         for(int i = 0; i < _levelButtons.Count; i++)
         {
             int levelNo = i;
@@ -25,6 +27,12 @@ public class LevelScreen : AScreen
     {
         GameManager.screen.LoadScreen(EScreen.GAME);
         GameManager.level.LoadLevel(levelNo);
+        GameManager.aud.PlayButtonClick();
     }
 
+    private void ModeScreen()
+    {
+        GameManager.screen.LoadScreen(EScreen.MODES);
+        GameManager.aud.PlayButtonClick();
+    }
 }

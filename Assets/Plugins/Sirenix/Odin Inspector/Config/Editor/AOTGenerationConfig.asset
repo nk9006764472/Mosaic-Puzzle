@@ -16,11 +16,17 @@ MonoBehaviour:
   deleteDllAfterBuilds: 1
   AutomateForAllAOTPlatforms: 1
   automateForPlatforms: 090000000d000000
-  lastScan: 637676884149191852
+  lastScan: 638202246579192417
   supportSerializedTypes:
-  - TypeName: System.Int32, mscorlib
+  - TypeName: TileColor, Assembly-CSharp
     IsCustom: 0
     Emit: 1
-  - TypeName: System.Int32[,], mscorlib
+  - TypeName: TileColor[,], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: TileShape, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: TileShape[,], Assembly-CSharp
     IsCustom: 0
     Emit: 1

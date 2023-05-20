@@ -17,12 +17,18 @@ public class ScreenManager : MonoBehaviour, Managers
         Screens[screen].InitializeScreen();
     }
 
+    public void LoadPopUp(EScreen screen)
+    {
+        Screens[screen].gameObject.SetActive(true);
+        Screens[screen].InitializeScreen();
+    }
+
     public void Initialize()
     {
         Screens.Add(EScreen.MODES, screenReference[0]);
         Screens.Add(EScreen.LEVELS, screenReference[1]);
         Screens.Add(EScreen.GAME, screenReference[2]);
-        Screens.Add(EScreen.STORE, screenReference[3]);
+        Screens.Add(EScreen.GAMEOVER, screenReference[3]);
 
         LoadScreen(EScreen.MODES);
     }
@@ -32,7 +38,7 @@ public enum EScreen
 {
     MODES, 
     LEVELS,
-    STORE,
+    GAMEOVER,
     GAME
 }
 

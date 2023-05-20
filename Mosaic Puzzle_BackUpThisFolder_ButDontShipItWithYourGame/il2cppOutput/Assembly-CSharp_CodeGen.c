@@ -1,0 +1,475 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 GameManager GameManager::get_Instance()
+extern void GameManager_get_Instance_m076FE4D98E785B5AEE0B4C360C7857F824E7FBD0 (void);
+// 0x00000002 System.Void GameManager::set_Instance(GameManager)
+extern void GameManager_set_Instance_mCFE1FA9223DC000B8D5535A9B6576264FA4405EF (void);
+// 0x00000003 LevelManager GameManager::get_level()
+extern void GameManager_get_level_m4077A654933AEACAE4DBFBDD528D7311C8DE0F4A (void);
+// 0x00000004 System.Void GameManager::set_level(LevelManager)
+extern void GameManager_set_level_mBDDF9958CCE16E535D94CE6BA6962005CFA58530 (void);
+// 0x00000005 ScreenManager GameManager::get_screen()
+extern void GameManager_get_screen_m9BD5D7E3BC0A53BD63642CEC4E163F21CAE3EAC3 (void);
+// 0x00000006 System.Void GameManager::set_screen(ScreenManager)
+extern void GameManager_set_screen_m9D45EA6B6349869B8FF3EECD98BA9CDBF3C4F5E8 (void);
+// 0x00000007 System.Void GameManager::Awake()
+extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
+// 0x00000008 System.Void GameManager::Initialize()
+extern void GameManager_Initialize_m5B00034142201D36BFA348358665FFA92B250C8E (void);
+// 0x00000009 System.Void GameManager::.ctor()
+extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
+// 0x0000000A Level LevelManager::get_CurrentLevel()
+extern void LevelManager_get_CurrentLevel_m708DB8868109A99D8F674E4282F44E9419281590 (void);
+// 0x0000000B System.Int32 LevelManager::get_CurrentLevelNo()
+extern void LevelManager_get_CurrentLevelNo_mC5C592BE633FA0FE87B7CD55ACE619F0483E77AE (void);
+// 0x0000000C GameScreen LevelManager::get_GameScreen()
+extern void LevelManager_get_GameScreen_mF3E7F1522D68F6A5FBDA96744B91914B8C6EFD09 (void);
+// 0x0000000D TileColor LevelManager::get_SelectedColor()
+extern void LevelManager_get_SelectedColor_mD0F9FB68CD140D2738BC210E8F1CBF0A69EFF5EB (void);
+// 0x0000000E System.Void LevelManager::set_SelectedColor(TileColor)
+extern void LevelManager_set_SelectedColor_m0F48C13E07724CBA2B38D678C17527F353680E8C (void);
+// 0x0000000F TileShape LevelManager::get_SelectedShape()
+extern void LevelManager_get_SelectedShape_mD974B0479322725D6782120DEFC3451FC62F6B4F (void);
+// 0x00000010 System.Void LevelManager::set_SelectedShape(TileShape)
+extern void LevelManager_set_SelectedShape_mB665487B008AC0C75BAB708882EEE10298DC1926 (void);
+// 0x00000011 UnityEngine.Color[] LevelManager::get_PeiceColors()
+extern void LevelManager_get_PeiceColors_m29512BDF34418DBEA564F9B619F8F1A74DDB2D17 (void);
+// 0x00000012 UnityEngine.Sprite[] LevelManager::get_OutlineShapes()
+extern void LevelManager_get_OutlineShapes_m258150D2446FC8CF1A1579DEEA4374D4A8D8C369 (void);
+// 0x00000013 UnityEngine.Sprite[] LevelManager::get_FilledShapes()
+extern void LevelManager_get_FilledShapes_mDE99B72164751647075A92A9B792C01CA265775C (void);
+// 0x00000014 System.Collections.Generic.List`1<Tile> LevelManager::get_TileOnBoard()
+extern void LevelManager_get_TileOnBoard_m6DFEB82DFDFE1A02E4127BB8BAD212D1F8A4DE47 (void);
+// 0x00000015 System.Void LevelManager::set_TileOnBoard(System.Collections.Generic.List`1<Tile>)
+extern void LevelManager_set_TileOnBoard_m5185C89720F0CE532EDCD642083CAD623EC17838 (void);
+// 0x00000016 System.Void LevelManager::Initialize()
+extern void LevelManager_Initialize_mC7778CC398F09B179903B744AE16D673F4C22369 (void);
+// 0x00000017 System.Void LevelManager::LoadLevel(System.Int32)
+extern void LevelManager_LoadLevel_mAE149EDFA7A121BDA2545153526DAC976419A3AD (void);
+// 0x00000018 System.Void LevelManager::LoadNextLevel()
+extern void LevelManager_LoadNextLevel_m1D217C4BC7375076C457A521C370727CDCA4D485 (void);
+// 0x00000019 System.Boolean LevelManager::CheckGameOver()
+extern void LevelManager_CheckGameOver_mB178FD8C5938E40D86EDFC8E916592C10A633129 (void);
+// 0x0000001A System.Void LevelManager::GameOver()
+extern void LevelManager_GameOver_m932C839DEB472FC5263A9A67599E9D83CF64CE85 (void);
+// 0x0000001B System.Void LevelManager::AbandonLevel()
+extern void LevelManager_AbandonLevel_m17548B43424CB828558416D6C4C03281A6144AA7 (void);
+// 0x0000001C System.Void LevelManager::.ctor()
+extern void LevelManager__ctor_m97F35AC08C296B73BD7D85FFB593A7BEA61B3F92 (void);
+// 0x0000001D System.Void LevelManager/<>c::.cctor()
+extern void U3CU3Ec__cctor_m66531B667A9965CC7E141A8CECFAF488BECC2027 (void);
+// 0x0000001E System.Void LevelManager/<>c::.ctor()
+extern void U3CU3Ec__ctor_m633FBF2D52750370ED03221B1F3388D8BA967758 (void);
+// 0x0000001F System.Boolean LevelManager/<>c::<AbandonLevel>b__35_0(Tile)
+extern void U3CU3Ec_U3CAbandonLevelU3Eb__35_0_mEF908044BC79240AFABC50C2CFA790322B7CD9AD (void);
+// 0x00000020 System.Void Managers::Initialize()
+// 0x00000021 System.Void ScreenManager::LoadScreen(EScreen)
+extern void ScreenManager_LoadScreen_m0D08DCE67E0B997994CC9238326B00752834B5C5 (void);
+// 0x00000022 System.Void ScreenManager::LoadPopUp(EScreen)
+extern void ScreenManager_LoadPopUp_m3741116E201B24CCC79F18C9758531095EE6052C (void);
+// 0x00000023 System.Void ScreenManager::Initialize()
+extern void ScreenManager_Initialize_m822D416C665F93F81DA5BBA6B3F5C7BCBF034C8C (void);
+// 0x00000024 System.Void ScreenManager::.ctor()
+extern void ScreenManager__ctor_m6F499D29D3592ED6030368C9EB312A26D1110E1E (void);
+// 0x00000025 System.Void AScreen::InitializeScreen()
+// 0x00000026 System.Void AScreen::.ctor()
+extern void AScreen__ctor_mC3A1766CD0451D2C65A378C612ED80431BE2104E (void);
+// 0x00000027 System.Void GameOverScreen::Awake()
+extern void GameOverScreen_Awake_mB7C360F186C59145D07D5F9117001B5E12A47C13 (void);
+// 0x00000028 System.Void GameOverScreen::InitializeScreen()
+extern void GameOverScreen_InitializeScreen_m3C0BC971FAC0235AB2E0294374F8A63B21488694 (void);
+// 0x00000029 System.Void GameOverScreen::NextClicked()
+extern void GameOverScreen_NextClicked_m2AB3F52915B6897272B8096B894BB6BAC4E56D4F (void);
+// 0x0000002A System.Void GameOverScreen::.ctor()
+extern void GameOverScreen__ctor_mC5150146F14E85405429254671C40F23C5BD9F20 (void);
+// 0x0000002B System.Void GameOverScreen::<Awake>b__1_0()
+extern void GameOverScreen_U3CAwakeU3Eb__1_0_m7F53AE3FEF7A0CC3B9457ED62993B3CBB604565F (void);
+// 0x0000002C System.Void GameScreen::Awake()
+extern void GameScreen_Awake_m7D73F1636D911FC68AC5CE162751FDC5E81677A5 (void);
+// 0x0000002D System.Void GameScreen::InitializeScreen()
+extern void GameScreen_InitializeScreen_m9F20DF716F9CB88E2EF0BC2FF14D5796CB92E37D (void);
+// 0x0000002E System.Void GameScreen::ClearPreviousLevel()
+extern void GameScreen_ClearPreviousLevel_mD17FFDA964E52D258837565CBAFB5291B7B95C2F (void);
+// 0x0000002F System.Void GameScreen::InitializeLevel(System.Int32)
+extern void GameScreen_InitializeLevel_mEE719D7FB3DEEBF4BD446FB3C99D9EAA5F7A86E2 (void);
+// 0x00000030 System.Void GameScreen::ActivateSelectionBorder()
+extern void GameScreen_ActivateSelectionBorder_m37F03C5AA0AA1BBD4686466501CD613D558B21F8 (void);
+// 0x00000031 System.Void GameScreen::ColorPalleteItemClicked(System.Int32)
+extern void GameScreen_ColorPalleteItemClicked_m34FA5FF4043A4B95F4025091073B00862C177479 (void);
+// 0x00000032 System.Void GameScreen::ShapePalleteItemClicked(System.Int32)
+extern void GameScreen_ShapePalleteItemClicked_mA7D92E278CF08D5260EFD4C5D3C30BAA3335F55F (void);
+// 0x00000033 System.Void GameScreen::ChangeShapeItemsColor()
+extern void GameScreen_ChangeShapeItemsColor_mD3C28670B87E0DD98F773114A3545D5A86265956 (void);
+// 0x00000034 System.Void GameScreen::SpawnFallingTile(System.Int32,System.Int32)
+extern void GameScreen_SpawnFallingTile_m5C1C711F30B4B7778637E2F874DB7806E4ED0FE0 (void);
+// 0x00000035 System.Void GameScreen::LevelScreen()
+extern void GameScreen_LevelScreen_m254A616197D5FC9F1AF088A8A905ED158511A386 (void);
+// 0x00000036 System.Void GameScreen::.ctor()
+extern void GameScreen__ctor_m99A4C997AAE32B3D2306D16DAE3846F4F316C31F (void);
+// 0x00000037 System.Void GameScreen::<Awake>b__13_0()
+extern void GameScreen_U3CAwakeU3Eb__13_0_mDD2896BB612F30E603C2F1D77B7DF265975CDA87 (void);
+// 0x00000038 System.Void GameScreen/ColorPalleteItem::.ctor()
+extern void ColorPalleteItem__ctor_m3CF1A26D2A53F92A8E64356ED00AA4FEC4EB0221 (void);
+// 0x00000039 System.Void GameScreen/ShapePalleteItem::.ctor()
+extern void ShapePalleteItem__ctor_m44435A9DAF4ECAE3E89E77CE1DC6441802EADCDE (void);
+// 0x0000003A System.Void GameScreen/<>c__DisplayClass13_0::.ctor()
+extern void U3CU3Ec__DisplayClass13_0__ctor_m145D5E4B50774CABA1F1E9FD6124101E72872B19 (void);
+// 0x0000003B System.Void GameScreen/<>c__DisplayClass13_0::<Awake>b__1()
+extern void U3CU3Ec__DisplayClass13_0_U3CAwakeU3Eb__1_mA8126A3D9C302A1D6F2D2C5DD3E8057A54B3A435 (void);
+// 0x0000003C System.Void GameScreen/<>c__DisplayClass13_1::.ctor()
+extern void U3CU3Ec__DisplayClass13_1__ctor_m5C489C85D103C91BA3B71E000DE1679E5A3488E0 (void);
+// 0x0000003D System.Void GameScreen/<>c__DisplayClass13_1::<Awake>b__2()
+extern void U3CU3Ec__DisplayClass13_1_U3CAwakeU3Eb__2_m251A369D52C47B5FC1D5E6C40F08CE16A853EFEC (void);
+// 0x0000003E System.Void LevelScreen::InitializeScreen()
+extern void LevelScreen_InitializeScreen_m4500BB734599A48CC471CDE6FC08E46F46266891 (void);
+// 0x0000003F System.Void LevelScreen::Awake()
+extern void LevelScreen_Awake_mA1394208EDCF2BD7F9FFD62D1005640FD69911F7 (void);
+// 0x00000040 System.Void LevelScreen::LoadLevel(System.Int32)
+extern void LevelScreen_LoadLevel_m476F409CAD58E54D9052BD098B20D72E365C5B0D (void);
+// 0x00000041 System.Void LevelScreen::ModeScreen()
+extern void LevelScreen_ModeScreen_m4E6495B1577620DA113C0677F389EBB66D5D2C78 (void);
+// 0x00000042 System.Void LevelScreen::.ctor()
+extern void LevelScreen__ctor_mA958E05F88484DD9EBE3F1D80E04E7E8CA49B865 (void);
+// 0x00000043 System.Void LevelScreen::<Awake>b__3_0()
+extern void LevelScreen_U3CAwakeU3Eb__3_0_m003CFBA429EDAA6FC9C4EF966C7301FB90E2E4F9 (void);
+// 0x00000044 System.Void LevelScreen/<>c__DisplayClass3_0::.ctor()
+extern void U3CU3Ec__DisplayClass3_0__ctor_mA375738258A2CEB73F09F792CF414D0B386151D5 (void);
+// 0x00000045 System.Void LevelScreen/<>c__DisplayClass3_0::<Awake>b__1()
+extern void U3CU3Ec__DisplayClass3_0_U3CAwakeU3Eb__1_mF14A9AB800B3C6276C23817A64F97AD716700520 (void);
+// 0x00000046 System.Void ModeScreen::Awake()
+extern void ModeScreen_Awake_m72C615FF0E3FF380E45612074B131B4FEC3E4F9C (void);
+// 0x00000047 System.Void ModeScreen::InitializeScreen()
+extern void ModeScreen_InitializeScreen_m184CE427F99C88BCDCC88E1967F3F471E49CFD49 (void);
+// 0x00000048 System.Void ModeScreen::LoadGameScreen()
+extern void ModeScreen_LoadGameScreen_m45DB9B13A921B108BE2E245E46DDF8458B8698BF (void);
+// 0x00000049 System.Void ModeScreen::LoadExitScreen()
+extern void ModeScreen_LoadExitScreen_m7A7B4B29F3D47A761CC3C14592C7F4F5B22E5739 (void);
+// 0x0000004A System.Void ModeScreen::GoToFaceBook()
+extern void ModeScreen_GoToFaceBook_m0E446C855F2D948F20B2AFF4C4E3B6850FD0ACAF (void);
+// 0x0000004B System.Void ModeScreen::RateUs()
+extern void ModeScreen_RateUs_m39F34645D1246EC1B2AF76660CA9E717E83E0DA7 (void);
+// 0x0000004C System.Void ModeScreen::ToggleSound()
+extern void ModeScreen_ToggleSound_mE0652860C103F5BD041B52A556063B6A1A14BBF1 (void);
+// 0x0000004D System.Void ModeScreen::.ctor()
+extern void ModeScreen__ctor_m6A4C8C7CACAB1C26D2CCB58599C4AF15F5777FE7 (void);
+// 0x0000004E System.Void ModeScreen::<Awake>b__10_0()
+extern void ModeScreen_U3CAwakeU3Eb__10_0_mE8481DBFE563E75C02380420FFCD59AEC9809646 (void);
+// 0x0000004F System.Void ModeScreen::<Awake>b__10_1()
+extern void ModeScreen_U3CAwakeU3Eb__10_1_m1EC58D32EF95F8CDB26D0672731010915175A798 (void);
+// 0x00000050 System.Void ModeScreen::<Awake>b__10_2()
+extern void ModeScreen_U3CAwakeU3Eb__10_2_mE65154816121904140036A65636DC1811F0ECC74 (void);
+// 0x00000051 System.Void ModeScreen::<Awake>b__10_3()
+extern void ModeScreen_U3CAwakeU3Eb__10_3_m30962F3A27A5C61179731BE08A1CEBD8382854A8 (void);
+// 0x00000052 System.Void ModeScreen::<Awake>b__10_4()
+extern void ModeScreen_U3CAwakeU3Eb__10_4_m18AA589A709C9461BB8EAE7F3F837C11CE7849DC (void);
+// 0x00000053 System.Void ModeScreen::<Awake>b__10_5()
+extern void ModeScreen_U3CAwakeU3Eb__10_5_mAEEAAF20E5378BEC02B1840998FF3DF1592C93EA (void);
+// 0x00000054 System.Void ModeScreen::<Awake>b__10_6()
+extern void ModeScreen_U3CAwakeU3Eb__10_6_mDA7F72B7FF14CD5B65A837996136C13BB1885262 (void);
+// 0x00000055 System.Void ModeScreen::<Awake>b__10_7()
+extern void ModeScreen_U3CAwakeU3Eb__10_7_m344BA1A305B8F9BADE0E5DAEE399B038FF40623D (void);
+// 0x00000056 System.Void ModeScreen::<Awake>b__10_8()
+extern void ModeScreen_U3CAwakeU3Eb__10_8_m201C6F5315BBACE553F69D85E07FBF0C7756DF09 (void);
+// 0x00000057 System.Void ModeScreen::<Awake>b__10_9()
+extern void ModeScreen_U3CAwakeU3Eb__10_9_m9D4B0F5EF60DBE5B9EA49D0DC8798FCBDAC833CC (void);
+// 0x00000058 System.Void L10x10::Awake()
+extern void L10x10_Awake_mD8692A649391DD1EEB9CBE058D39A709ABEF3B9E (void);
+// 0x00000059 System.Void L10x10::.ctor()
+extern void L10x10__ctor_m1337487868F692865948AFE278A7E53C3380D137 (void);
+// 0x0000005A System.Void L14X14::Awake()
+extern void L14X14_Awake_mA27D7DAF2EBA566C25FBEB005108D24A861496A0 (void);
+// 0x0000005B System.Void L14X14::.ctor()
+extern void L14X14__ctor_m52EB76A0B0665CA22EECDE57EC114348C50AF0CB (void);
+// 0x0000005C System.Void L8x8::Awake()
+extern void L8x8_Awake_m59C8AE323E2148243E362F571668C461686C64AE (void);
+// 0x0000005D System.Void L8x8::.ctor()
+extern void L8x8__ctor_m79011A004C7BBA30ECEF7B5C863604518D0E1879 (void);
+// 0x0000005E System.Void Level::.ctor()
+extern void Level__ctor_mD8581BC772C33D9960DCE832878E1A5C45F7C0DA (void);
+// 0x0000005F System.Boolean Tile::get_IsFilled()
+extern void Tile_get_IsFilled_m07BFF8E970B123B185046D9893265E9B2CD61278 (void);
+// 0x00000060 System.Int32 Tile::get_TileRow()
+extern void Tile_get_TileRow_m9DA9CBB393F80A6F756BD8F6CDCD13CE74612D7D (void);
+// 0x00000061 System.Void Tile::set_TileRow(System.Int32)
+extern void Tile_set_TileRow_m74E60FE8970F416D971F01207574604073B88BA9 (void);
+// 0x00000062 System.Int32 Tile::get_TileColoumn()
+extern void Tile_get_TileColoumn_m5577FCEF2BD507F6135122BF4167037808D51F5E (void);
+// 0x00000063 System.Void Tile::set_TileColoumn(System.Int32)
+extern void Tile_set_TileColoumn_m7FAB6ADE68F4C1C6D29261984090AA0F1F7BA087 (void);
+// 0x00000064 TileColor Tile::get_Color()
+extern void Tile_get_Color_mBCF8D771B544C52EA4DABD4D62E7079C649B4092 (void);
+// 0x00000065 TileShape Tile::get_Shape()
+extern void Tile_get_Shape_m51EC7FD616A3A06701B28331C6AEE892A857139E (void);
+// 0x00000066 System.Void Tile::Awake()
+extern void Tile_Awake_m8CE361BE2F7DD3BFD42DDCF775CF4F89FCEDCABF (void);
+// 0x00000067 System.Void Tile::TileClick()
+extern void Tile_TileClick_mB57588BBE59755FED7790375AC75ED55B2193D83 (void);
+// 0x00000068 System.Void Tile::EnableBG()
+extern void Tile_EnableBG_mE7E13378AC3644492F5A9E12ED4A0AE25D4F6CCD (void);
+// 0x00000069 System.Void Tile::InitializeApplyColor(TileColor)
+extern void Tile_InitializeApplyColor_mBAFEF68095206B66D4903D39FAB8CD9526BA6010 (void);
+// 0x0000006A System.Void Tile::InitializeApplySprite(TileShape)
+extern void Tile_InitializeApplySprite_m86A91DA8E57DD28469E5587603829B0B1558F3ED (void);
+// 0x0000006B System.Void Tile::ApplyFilledSprites(TileShape)
+extern void Tile_ApplyFilledSprites_m0C4C48AAF4EA76889477F9B2ABA9BD38AC2B9DA5 (void);
+// 0x0000006C System.Void Tile::.ctor()
+extern void Tile__ctor_mB2C904B47040471552C938AE751AC0BF80B369E7 (void);
+// 0x0000006D System.Void Tile::<Awake>b__20_0()
+extern void Tile_U3CAwakeU3Eb__20_0_mD3D3B9619791058473305174C4FB3A1F037A4864 (void);
+static Il2CppMethodPointer s_methodPointers[109] = 
+{
+	GameManager_get_Instance_m076FE4D98E785B5AEE0B4C360C7857F824E7FBD0,
+	GameManager_set_Instance_mCFE1FA9223DC000B8D5535A9B6576264FA4405EF,
+	GameManager_get_level_m4077A654933AEACAE4DBFBDD528D7311C8DE0F4A,
+	GameManager_set_level_mBDDF9958CCE16E535D94CE6BA6962005CFA58530,
+	GameManager_get_screen_m9BD5D7E3BC0A53BD63642CEC4E163F21CAE3EAC3,
+	GameManager_set_screen_m9D45EA6B6349869B8FF3EECD98BA9CDBF3C4F5E8,
+	GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F,
+	GameManager_Initialize_m5B00034142201D36BFA348358665FFA92B250C8E,
+	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
+	LevelManager_get_CurrentLevel_m708DB8868109A99D8F674E4282F44E9419281590,
+	LevelManager_get_CurrentLevelNo_mC5C592BE633FA0FE87B7CD55ACE619F0483E77AE,
+	LevelManager_get_GameScreen_mF3E7F1522D68F6A5FBDA96744B91914B8C6EFD09,
+	LevelManager_get_SelectedColor_mD0F9FB68CD140D2738BC210E8F1CBF0A69EFF5EB,
+	LevelManager_set_SelectedColor_m0F48C13E07724CBA2B38D678C17527F353680E8C,
+	LevelManager_get_SelectedShape_mD974B0479322725D6782120DEFC3451FC62F6B4F,
+	LevelManager_set_SelectedShape_mB665487B008AC0C75BAB708882EEE10298DC1926,
+	LevelManager_get_PeiceColors_m29512BDF34418DBEA564F9B619F8F1A74DDB2D17,
+	LevelManager_get_OutlineShapes_m258150D2446FC8CF1A1579DEEA4374D4A8D8C369,
+	LevelManager_get_FilledShapes_mDE99B72164751647075A92A9B792C01CA265775C,
+	LevelManager_get_TileOnBoard_m6DFEB82DFDFE1A02E4127BB8BAD212D1F8A4DE47,
+	LevelManager_set_TileOnBoard_m5185C89720F0CE532EDCD642083CAD623EC17838,
+	LevelManager_Initialize_mC7778CC398F09B179903B744AE16D673F4C22369,
+	LevelManager_LoadLevel_mAE149EDFA7A121BDA2545153526DAC976419A3AD,
+	LevelManager_LoadNextLevel_m1D217C4BC7375076C457A521C370727CDCA4D485,
+	LevelManager_CheckGameOver_mB178FD8C5938E40D86EDFC8E916592C10A633129,
+	LevelManager_GameOver_m932C839DEB472FC5263A9A67599E9D83CF64CE85,
+	LevelManager_AbandonLevel_m17548B43424CB828558416D6C4C03281A6144AA7,
+	LevelManager__ctor_m97F35AC08C296B73BD7D85FFB593A7BEA61B3F92,
+	U3CU3Ec__cctor_m66531B667A9965CC7E141A8CECFAF488BECC2027,
+	U3CU3Ec__ctor_m633FBF2D52750370ED03221B1F3388D8BA967758,
+	U3CU3Ec_U3CAbandonLevelU3Eb__35_0_mEF908044BC79240AFABC50C2CFA790322B7CD9AD,
+	NULL,
+	ScreenManager_LoadScreen_m0D08DCE67E0B997994CC9238326B00752834B5C5,
+	ScreenManager_LoadPopUp_m3741116E201B24CCC79F18C9758531095EE6052C,
+	ScreenManager_Initialize_m822D416C665F93F81DA5BBA6B3F5C7BCBF034C8C,
+	ScreenManager__ctor_m6F499D29D3592ED6030368C9EB312A26D1110E1E,
+	NULL,
+	AScreen__ctor_mC3A1766CD0451D2C65A378C612ED80431BE2104E,
+	GameOverScreen_Awake_mB7C360F186C59145D07D5F9117001B5E12A47C13,
+	GameOverScreen_InitializeScreen_m3C0BC971FAC0235AB2E0294374F8A63B21488694,
+	GameOverScreen_NextClicked_m2AB3F52915B6897272B8096B894BB6BAC4E56D4F,
+	GameOverScreen__ctor_mC5150146F14E85405429254671C40F23C5BD9F20,
+	GameOverScreen_U3CAwakeU3Eb__1_0_m7F53AE3FEF7A0CC3B9457ED62993B3CBB604565F,
+	GameScreen_Awake_m7D73F1636D911FC68AC5CE162751FDC5E81677A5,
+	GameScreen_InitializeScreen_m9F20DF716F9CB88E2EF0BC2FF14D5796CB92E37D,
+	GameScreen_ClearPreviousLevel_mD17FFDA964E52D258837565CBAFB5291B7B95C2F,
+	GameScreen_InitializeLevel_mEE719D7FB3DEEBF4BD446FB3C99D9EAA5F7A86E2,
+	GameScreen_ActivateSelectionBorder_m37F03C5AA0AA1BBD4686466501CD613D558B21F8,
+	GameScreen_ColorPalleteItemClicked_m34FA5FF4043A4B95F4025091073B00862C177479,
+	GameScreen_ShapePalleteItemClicked_mA7D92E278CF08D5260EFD4C5D3C30BAA3335F55F,
+	GameScreen_ChangeShapeItemsColor_mD3C28670B87E0DD98F773114A3545D5A86265956,
+	GameScreen_SpawnFallingTile_m5C1C711F30B4B7778637E2F874DB7806E4ED0FE0,
+	GameScreen_LevelScreen_m254A616197D5FC9F1AF088A8A905ED158511A386,
+	GameScreen__ctor_m99A4C997AAE32B3D2306D16DAE3846F4F316C31F,
+	GameScreen_U3CAwakeU3Eb__13_0_mDD2896BB612F30E603C2F1D77B7DF265975CDA87,
+	ColorPalleteItem__ctor_m3CF1A26D2A53F92A8E64356ED00AA4FEC4EB0221,
+	ShapePalleteItem__ctor_m44435A9DAF4ECAE3E89E77CE1DC6441802EADCDE,
+	U3CU3Ec__DisplayClass13_0__ctor_m145D5E4B50774CABA1F1E9FD6124101E72872B19,
+	U3CU3Ec__DisplayClass13_0_U3CAwakeU3Eb__1_mA8126A3D9C302A1D6F2D2C5DD3E8057A54B3A435,
+	U3CU3Ec__DisplayClass13_1__ctor_m5C489C85D103C91BA3B71E000DE1679E5A3488E0,
+	U3CU3Ec__DisplayClass13_1_U3CAwakeU3Eb__2_m251A369D52C47B5FC1D5E6C40F08CE16A853EFEC,
+	LevelScreen_InitializeScreen_m4500BB734599A48CC471CDE6FC08E46F46266891,
+	LevelScreen_Awake_mA1394208EDCF2BD7F9FFD62D1005640FD69911F7,
+	LevelScreen_LoadLevel_m476F409CAD58E54D9052BD098B20D72E365C5B0D,
+	LevelScreen_ModeScreen_m4E6495B1577620DA113C0677F389EBB66D5D2C78,
+	LevelScreen__ctor_mA958E05F88484DD9EBE3F1D80E04E7E8CA49B865,
+	LevelScreen_U3CAwakeU3Eb__3_0_m003CFBA429EDAA6FC9C4EF966C7301FB90E2E4F9,
+	U3CU3Ec__DisplayClass3_0__ctor_mA375738258A2CEB73F09F792CF414D0B386151D5,
+	U3CU3Ec__DisplayClass3_0_U3CAwakeU3Eb__1_mF14A9AB800B3C6276C23817A64F97AD716700520,
+	ModeScreen_Awake_m72C615FF0E3FF380E45612074B131B4FEC3E4F9C,
+	ModeScreen_InitializeScreen_m184CE427F99C88BCDCC88E1967F3F471E49CFD49,
+	ModeScreen_LoadGameScreen_m45DB9B13A921B108BE2E245E46DDF8458B8698BF,
+	ModeScreen_LoadExitScreen_m7A7B4B29F3D47A761CC3C14592C7F4F5B22E5739,
+	ModeScreen_GoToFaceBook_m0E446C855F2D948F20B2AFF4C4E3B6850FD0ACAF,
+	ModeScreen_RateUs_m39F34645D1246EC1B2AF76660CA9E717E83E0DA7,
+	ModeScreen_ToggleSound_mE0652860C103F5BD041B52A556063B6A1A14BBF1,
+	ModeScreen__ctor_m6A4C8C7CACAB1C26D2CCB58599C4AF15F5777FE7,
+	ModeScreen_U3CAwakeU3Eb__10_0_mE8481DBFE563E75C02380420FFCD59AEC9809646,
+	ModeScreen_U3CAwakeU3Eb__10_1_m1EC58D32EF95F8CDB26D0672731010915175A798,
+	ModeScreen_U3CAwakeU3Eb__10_2_mE65154816121904140036A65636DC1811F0ECC74,
+	ModeScreen_U3CAwakeU3Eb__10_3_m30962F3A27A5C61179731BE08A1CEBD8382854A8,
+	ModeScreen_U3CAwakeU3Eb__10_4_m18AA589A709C9461BB8EAE7F3F837C11CE7849DC,
+	ModeScreen_U3CAwakeU3Eb__10_5_mAEEAAF20E5378BEC02B1840998FF3DF1592C93EA,
+	ModeScreen_U3CAwakeU3Eb__10_6_mDA7F72B7FF14CD5B65A837996136C13BB1885262,
+	ModeScreen_U3CAwakeU3Eb__10_7_m344BA1A305B8F9BADE0E5DAEE399B038FF40623D,
+	ModeScreen_U3CAwakeU3Eb__10_8_m201C6F5315BBACE553F69D85E07FBF0C7756DF09,
+	ModeScreen_U3CAwakeU3Eb__10_9_m9D4B0F5EF60DBE5B9EA49D0DC8798FCBDAC833CC,
+	L10x10_Awake_mD8692A649391DD1EEB9CBE058D39A709ABEF3B9E,
+	L10x10__ctor_m1337487868F692865948AFE278A7E53C3380D137,
+	L14X14_Awake_mA27D7DAF2EBA566C25FBEB005108D24A861496A0,
+	L14X14__ctor_m52EB76A0B0665CA22EECDE57EC114348C50AF0CB,
+	L8x8_Awake_m59C8AE323E2148243E362F571668C461686C64AE,
+	L8x8__ctor_m79011A004C7BBA30ECEF7B5C863604518D0E1879,
+	Level__ctor_mD8581BC772C33D9960DCE832878E1A5C45F7C0DA,
+	Tile_get_IsFilled_m07BFF8E970B123B185046D9893265E9B2CD61278,
+	Tile_get_TileRow_m9DA9CBB393F80A6F756BD8F6CDCD13CE74612D7D,
+	Tile_set_TileRow_m74E60FE8970F416D971F01207574604073B88BA9,
+	Tile_get_TileColoumn_m5577FCEF2BD507F6135122BF4167037808D51F5E,
+	Tile_set_TileColoumn_m7FAB6ADE68F4C1C6D29261984090AA0F1F7BA087,
+	Tile_get_Color_mBCF8D771B544C52EA4DABD4D62E7079C649B4092,
+	Tile_get_Shape_m51EC7FD616A3A06701B28331C6AEE892A857139E,
+	Tile_Awake_m8CE361BE2F7DD3BFD42DDCF775CF4F89FCEDCABF,
+	Tile_TileClick_mB57588BBE59755FED7790375AC75ED55B2193D83,
+	Tile_EnableBG_mE7E13378AC3644492F5A9E12ED4A0AE25D4F6CCD,
+	Tile_InitializeApplyColor_mBAFEF68095206B66D4903D39FAB8CD9526BA6010,
+	Tile_InitializeApplySprite_m86A91DA8E57DD28469E5587603829B0B1558F3ED,
+	Tile_ApplyFilledSprites_m0C4C48AAF4EA76889477F9B2ABA9BD38AC2B9DA5,
+	Tile__ctor_mB2C904B47040471552C938AE751AC0BF80B369E7,
+	Tile_U3CAwakeU3Eb__20_0_mD3D3B9619791058473305174C4FB3A1F037A4864,
+};
+static const int32_t s_InvokerIndices[109] = 
+{
+	6060,
+	5982,
+	6060,
+	5982,
+	6060,
+	5982,
+	3976,
+	3976,
+	3976,
+	3880,
+	3859,
+	3880,
+	3859,
+	3221,
+	3859,
+	3221,
+	3880,
+	3880,
+	3880,
+	3880,
+	3240,
+	3976,
+	3221,
+	3976,
+	3813,
+	3976,
+	3976,
+	3976,
+	6087,
+	3976,
+	2345,
+	0,
+	3221,
+	3221,
+	3976,
+	3976,
+	0,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3221,
+	3976,
+	3221,
+	3221,
+	3976,
+	1712,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3221,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3976,
+	3813,
+	3859,
+	3221,
+	3859,
+	3221,
+	3859,
+	3859,
+	3976,
+	3976,
+	3976,
+	3221,
+	3221,
+	3221,
+	3976,
+	3976,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	109,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
